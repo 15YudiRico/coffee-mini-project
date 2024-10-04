@@ -1,8 +1,9 @@
 import { CatalogueButton, HomeButton, UploadButton, DistributorButton, OrderButton } from "@/components/buttons";
+import HomeTable from "@/components/home-table";
 import { Footer } from "@/components/footer";
 import HeaderPage from "@/components/header";
 
-export default function Home() {
+const HomePage = () => {
   return (
     <div className="max-w-screen-md mx-auto mt-5">
       <HeaderPage />
@@ -13,7 +14,10 @@ export default function Home() {
         <DistributorButton />
         <UploadButton />
       </div>
+      <HomeTable />
       <Footer />
     </div>
   );
-}
+};
+
+export default HomePage;

@@ -1,8 +1,9 @@
 import { CatalogueButton, HomeButton, UploadButton, DistributorButton, OrderButton } from "@/components/buttons";
 import { Footer } from "@/components/footer";
 import HeaderPage from "@/components/header";
+import UploadForm from "@/components/upload-form";
 
-export default function Home() {
+const UploadPage = () => {
   return (
     <div className="max-w-screen-md mx-auto mt-5">
       <HeaderPage />
@@ -13,7 +14,10 @@ export default function Home() {
         <DistributorButton />
         <UploadButton />
       </div>
+      <UploadForm />
       <Footer />
     </div>
   );
-}
+};
+
+export default UploadPage;
